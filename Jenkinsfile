@@ -30,6 +30,13 @@ pipeline {
         sh 'cd android && ./gradlew clean'
       }
     }
+     stage('Set local.properties') {
+      steps {
+        sh '''
+          echo "sdk.dir=$HOME/Library/Android/sdk" > android/local.properties
+        '''
+      }
+    }
 
     stage('Build APK') {
       steps {
