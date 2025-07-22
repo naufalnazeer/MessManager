@@ -20,7 +20,7 @@ pipeline {
     stage('Install Dependencies') {
       steps {
         echo 'Installing JavaScript dependencies...'
-        sh 'yarn install --frozen-lockfile'
+        sh 'npm install'
       }
     }
 
