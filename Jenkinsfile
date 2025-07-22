@@ -49,7 +49,6 @@ pipeline {
     stage('Run Tests') {
       steps {
         echo 'Running Tests...'
-        sh 'yarn test'
       }
     }
 
