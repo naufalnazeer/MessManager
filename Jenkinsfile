@@ -13,7 +13,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git url: 'https://github.com/yourusername/your-repo.git'
+        git url: 'https://github.com/naufalnazeer/MessManager.git'
       }
     }
 
