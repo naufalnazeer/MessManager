@@ -1,5 +1,5 @@
 pipeline {
-  agent { label 'android' }  // Use your Android build node label here
+  agent any // Use your Android build node label here
 
   environment {
     ANDROID_HOME = "/home/jenkins/Android/Sdk" // Adjust path as per your machine
