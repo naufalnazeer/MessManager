@@ -2,8 +2,8 @@ pipeline {
   agent any // Use your Android build node label here
 
   environment {
-    ANDROID_HOME = "/home/jenkins/Android/Sdk" // Adjust path as per your machine
-    PATH = "$PATH:$ANDROID_HOME/platform-tools:$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/cmdline-tools/latest/bin"
+     ANDROID_HOME = "/Users/naufal/Library/Android/sdk"  // or wherever your SDK is
+    PATH = "${ANDROID_HOME}/platform-tools:${ANDROID_HOME}/emulator:${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:${PATH}"
   }
 
   tools {
